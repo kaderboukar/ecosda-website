@@ -10,6 +10,14 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthenticatedSessionController extends Controller
 {
+
+    // Dans AuthenticatedSessionController.php
+    public function create()
+    {
+        return view('auth.login');
+    }
+
+    
     /**
      * Handle an incoming authentication request.
      */
